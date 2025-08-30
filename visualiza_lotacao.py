@@ -4,7 +4,7 @@ import plotly.express as px
 
 # --- Configuração da Página ---
 st.set_page_config(
-    page_title="Cargos por Lotação (Julho de 2025)",
+    page_title="Cargos por Lotação",
     page_icon="📊",
     layout="wide"
 )
@@ -26,7 +26,7 @@ def carregar_dados(caminho_arquivo):
         return None
 
 # --- Título e Descrição ---
-st.title("📊 Cargos por Lotação")
+st.title("📊 Cargos por Lotação (Julho de 2025)")
 st.markdown("""
 Utilize os filtros ao lado para selecionar as lotações e respectivos cargos.
 """)
@@ -134,3 +134,4 @@ if df is not None:
         else:
 
             st.warning("Nenhum dado encontrado para os filtros selecionados.")
+
