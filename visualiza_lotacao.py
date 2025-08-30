@@ -4,7 +4,7 @@ import plotly.express as px
 
 # --- Configuração da Página ---
 st.set_page_config(
-    page_title="Cargos por Lotação",
+    page_title="Cargos por Lotação (Julho de 2025)",
     page_icon="📊",
     layout="wide"
 )
@@ -132,4 +132,5 @@ if df is not None:
                 st.dataframe(df_filtrado)
 
         else:
+
             st.warning("Nenhum dado encontrado para os filtros selecionados.")
